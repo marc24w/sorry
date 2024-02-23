@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class PedirDisculpas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("¿Me perdonas? (si/no):");
+        String respuesta = scanner.nextLine();
+
+        if (respuesta.equalsIgnoreCase("si")) {
+            System.out.println("¡Gracias! Me alegra que me hayas perdonado.");
+        } else {
+            System.out.println("Entiendo. Lo siento mucho de todas formas.");
+        }
+
+        scanner.close();
+    }
+}
